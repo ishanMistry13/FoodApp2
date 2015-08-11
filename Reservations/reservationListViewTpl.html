@@ -1,0 +1,83 @@
+<div class="panel panel-default well" ng-init="reserveVm.dispReservationList()">
+    <div class="row">
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-primary" id="btnGuestRes" ng-click="reserveVm.tabViewReserve('tab1')">
+                Reservation List
+            </button>
+        </div>
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-primary" id="btnOwnerLogin"
+                    ng-click="reserveVm.tabViewReserve('tab2')">
+                Menu
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="jumbotron" id="reservationList">
+
+    <div class="container" id="formReserveArea1" ng-show="reserveVm.tab1">
+        <table class="table table-hover" id="reserveTable">
+            <thead>
+            <tr>
+                <th>CNF#</th>
+                <th>Customer Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Party Size</th>
+                <th>Special Needs</th>
+                <th>Date Reserved</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr data-ng-repeat="reservation in reserveVm.reservationData">
+                <td>{{reservation.resId}}</td>
+                <td>{{reservation.custName}}</td>
+                <td>{{reservation.custPhone}}</td>
+                <td>{{reservation.custEmail}}</td>
+                <td>{{reservation.partySize}}</td>
+                <td>{{reservation.specialNeed}}</td>
+                <td>{{reservation.resDate}}</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <div class="container" id="menuViewArea" ng-show="reserveVm.tab2">
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h2>Menu</h2>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h2>Menu</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Veg Dishes</h3>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h3>Non-Veg Dishes</h3>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

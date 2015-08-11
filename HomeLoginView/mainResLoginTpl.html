@@ -1,0 +1,93 @@
+<div class="panel panel-default well">
+    <div class="row">
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-primary" id="btnGuestRes" data-ng-click="tabVm.reserve('tab1')">
+                Guest Reservation
+            </button>
+        </div>
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-primary" id="btnOwnerLogin" data-ng-click="tabVm.reserve('tab2')">
+                Owner Login
+            </button>
+        </div>
+    </div>
+</div>
+<div class="jumbotron" id="loginResForms">
+    <div class="container" id="formReserveArea1" data-ng-show="tabVm.tab1">
+        <h6>Make a Reservation</h6>
+
+        <form role="form" data-ng-submit="tabVm.submitReserve()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="reserveDate">Date</label>
+                        <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY" ng-model="tabVm.newRes.resDate">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="reserveTime">Time</label>
+                        <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM" ng-model="tabVm.newRes.resTime">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reserveName">Name</label>
+                <input type="text" class="form-control" id="reserveName" placeholder="Enter Your Name" ng-model="tabVm.newRes.custName">
+            </div>
+
+            <div class="form-group">
+                <label for="reservePhone">Phone</label>
+                <input type="tel" class="form-control" id="reservePhone" placeholder="Enter Your Phone" ng-model="tabVm.newRes.custPhone">
+            </div>
+            <div class="form-group">
+                <label for="reserveEmail">Email</label>
+                <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com" ng-model="tabVm.newRes.custEmail">
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="reserveSize">Party Size</label>
+                        <input type="number" class="form-control" id="reserveSize" placeholder="# Guests" ng-model="tabVm.newRes.partySize">
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="form-group">
+                        <label for="reserveSpecial">Special Need</label>
+                        <input type="email" class="form-control" id="reserveSpecial"
+                               placeholder="e.g. Birthday, Anniversary etc." ng-model="tabVm.newRes.specialNeed">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn large-btn btn-primary" >Reserve</button>
+                <button type="button" class="btn btn-link" ng-click="tabVm.searchRes()">Change Existing Reservation?</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container" id="formReserveArea2" ng-show="tabVm.tab2">
+        <h6>Login</h6>
+
+        <form role="form">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn large-btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-link">Forgot Password?</button>
+            </div>
+        </form>
+
+
+    </div>
+
+</div>
+

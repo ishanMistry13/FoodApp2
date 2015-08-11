@@ -1,0 +1,190 @@
+
+body{
+    background: -moz-linear-gradient(56deg, rgba(8,11,13,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(8,11,13,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(56deg, rgba(8,11,13,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(56deg, rgba(8,11,13,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(56deg, rgba(8,11,13,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+    background: linear-gradient(34deg, rgba(8,11,13,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#080B0D',GradientType=0 ); /* ie6-9 */
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+.navbar-header{
+
+    height: 90px;
+
+
+}
+
+.navbar-brand{
+    padding-top: 5px !important;
+
+
+}
+
+.banner-logo{
+
+    border: 1px solid ;
+    border-radius: 20px;
+    height: 70px;
+    width: 90px;
+    margin-top: 4px;
+    -webkit-box-shadow: -1px 2px 29px -2px rgba(224,252,8,1);
+    -moz-box-shadow: -1px 2px 29px -2px rgba(224,252,8,1);
+    box-shadow: -1px 2px 29px -2px rgba(224,252,8,1);
+
+}
+
+.navbar-toggle{
+
+ height : 50px;
+ margin-top: 20px;
+
+}
+
+
+ul.nav.nav-tabs.nav-justified>li{
+    background: #4FC3F7;
+}
+
+#content{
+    background: #607D8B;
+    margin-top: 10px;
+    border:1px solid black;
+}
+
+#tabguest{
+
+    border: 2px solid black;
+    border-radius: 3px;
+
+}
+
+.tab-guest{
+    width:90%;
+    padding: 5px;
+
+}
+
+#mainName{
+
+    color:white;
+    display: block;
+    margin: 30px 0px auto 130px;
+    text-shadow: 4px 3px 2px rgba(148, 150, 150, 1);
+
+}
+
+ul.nav.navbar-nav.navbar-right>li {
+
+    color:white;
+    border: 1px solid white;
+
+}
+
+div.collapse.navbar-collapse {
+    margin-top: 19px;
+}
+
+
+.homeContainer{
+
+
+    margin-top: 100px;
+    margin-bottom:0;
+    margin-right: auto;
+    margin-left:auto;
+    /*border: 1px solid black;*/
+    width: 65%;
+
+}
+
+
+#homeModuleDispCtrl{
+
+    /*border: 1px solid black;*/
+    width: 100%;
+
+
+
+
+}
+
+
+#searchInputBox{
+
+    width:100%;!important;
+
+}
+
+
+
+#btnSearchRes{
+
+    width:100%;
+
+
+}
+
+
+
+#btnGuestRes{
+
+    width:100%;
+
+
+}
+
+#btnOwnerLogin{
+    width:100%;
+
+}
+
+div.panel.panel-default{
+
+    margin-bottom: 0;
+    margin-left:auto;
+    margin-right:auto;
+    width:97%
+}
+
+#loginResForms{
+    border:1px solid black;
+    border-radius: 6px;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 3px;!important;
+    width:94.5%;
+}
+
+
+#formReserveArea1{
+    margin-top:2px;
+
+
+}
+
+
+
+
+#reservationList{
+    border:1px solid black;
+    border-radius: 6px;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 3px;!important;
+    width:97%;
+
+
+}
+
+#reserveTable{
+    margin:0 auto;
+    width:100%;
+
+}
+
